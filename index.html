@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIOR — Maison de Couture</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<nav id="nav" class="dark">
+  <a href="#" class="nav-logo">DIOR</a>
+  <ul class="nav-links">
+    <li><a href="#editorial">Collections</a></li>
+    <li><a href="#products">Boutique</a></li>
+    <li><a href="#feat-wrap">Savoir-Faire</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+  </ul>
+  <div class="nav-right">
+    <span class="nav-icon nav-icon-btn" title="Search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </span>
+    <span class="nav-icon nav-icon-btn" title="Account">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+    </span>
+    <span class="nav-icon nav-icon-btn nav-bag" title="Bag">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+      <span class="bag-count">0</span>
+    </span>
+  </div>
+</nav>
+
+<section id="hero">
+  <video class="hero-bg-video" autoplay muted loop playsinline preload="auto" poster="bg img dior.webp">
+    <source src="bg-dior-video-small.mp4" type="video/mp4">
+  </video>
+  <div class="hero-vignette"></div>
+  <div class="scroll-progress-line" id="scrollProgress"></div>
+  <svg class="svg-corner tl svg-line-draw" width="120" height="120" viewBox="0 0 120 120" fill="none">
+    <path d="M10 110 L10 10 L110 10" stroke="#b8a06a" stroke-width="1"/>
+    <path d="M10 10 L35 10" stroke="#d4bc8a" stroke-width="2"/>
+    <path d="M10 10 L10 35" stroke="#d4bc8a" stroke-width="2"/>
+    <circle cx="10" cy="10" r="4" fill="none" stroke="#b8a06a" stroke-width="1"/>
+    <circle cx="10" cy="10" r="1.5" fill="#b8a06a"/>
+    <path d="M26 50 Q35 38 50 50 Q65 62 74 50" stroke="#b8a06a" stroke-width=".7" fill="none"/>
+    <line x1="50" y1="62" x2="50" y2="88" stroke="#b8a06a" stroke-width=".5"/>
+    <circle cx="50" cy="95" r="3" fill="none" stroke="#b8a06a" stroke-width=".8"/>
+  </svg>
+  <svg class="svg-corner tr svg-line-draw" width="120" height="120" viewBox="0 0 120 120" fill="none">
+    <path d="M10 110 L10 10 L110 10" stroke="#b8a06a" stroke-width="1"/>
+    <path d="M10 10 L35 10" stroke="#d4bc8a" stroke-width="2"/>
+    <path d="M10 10 L10 35" stroke="#d4bc8a" stroke-width="2"/>
+    <circle cx="10" cy="10" r="4" fill="none" stroke="#b8a06a" stroke-width="1"/>
+    <circle cx="10" cy="10" r="1.5" fill="#b8a06a"/>
+    <path d="M26 50 Q35 38 50 50 Q65 62 74 50" stroke="#b8a06a" stroke-width=".7" fill="none"/>
+  </svg>
+  <svg style="position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:3;opacity:.22;pointer-events:none;" width="52" height="52" viewBox="0 0 52 52" fill="none">
+    <circle cx="26" cy="26" r="24" stroke="#b8a06a" stroke-width=".8"/>
+    <circle cx="26" cy="26" r="17" stroke="#b8a06a" stroke-width=".4"/>
+    <circle cx="26" cy="26" r="2.5" fill="#b8a06a"/>
+    <line x1="26" y1="2" x2="26" y2="50" stroke="#b8a06a" stroke-width=".5"/>
+    <line x1="2" y1="26" x2="50" y2="26" stroke="#b8a06a" stroke-width=".5"/>
+    <line x1="9" y1="9" x2="43" y2="43" stroke="#b8a06a" stroke-width=".3"/>
+    <line x1="43" y1="9" x2="9" y2="43" stroke="#b8a06a" stroke-width=".3"/>
+    <circle cx="26" cy="2" r="1.5" fill="#b8a06a"/>
+    <circle cx="26" cy="50" r="1.5" fill="#b8a06a"/>
+    <circle cx="2" cy="26" r="1.5" fill="#b8a06a"/>
+    <circle cx="50" cy="26" r="1.5" fill="#b8a06a"/>
+  </svg>
+  <div class="hero-content">
+    <div class="hero-title-wrap">
+      <h1 class="hero-title">
+        <span class="line">The New</span>
+        <span class="line italic">Collection</span>
+      </h1>
+    </div>
+    <p class="hero-desc">A vision of femininity reimagined through the prism of Paris. Each piece a testament to the enduring art of Dior craftsmanship.</p>
+    <div class="hero-cta-row">
+      <a href="#products" class="btn-gold">Discover Now</a>
+      <a href="#about" class="btn-outline-light">Our Maison</a>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="scroll-bar"></div></div>
+</section>
+
+<div class="ticker"><div class="ticker-track"></div></div>
+
+<div style="background:var(--black);border-bottom:1px solid rgba(184,160,106,.18);"></div>
+
+<section id="editorial">
+  <div class="section-head g-fade">
+    <div><span class="section-label">New Arrivals</span><h2 class="section-title">The <em>Latest</em> Stories</h2></div>
+    <a href="#" class="section-link">View All Collections →</a>
+  </div>
+  <div class="editorial-grid">
+    <div class="ed-cell g-scale" data-char="D"><img class="ed-img" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=900&q=80&fit=crop" alt=""><div class="ed-overlay"></div><svg class="svg-frame" viewBox="0 0 100 100" preserveAspectRatio="none"><rect x="3" y="3" width="94" height="94"/></svg><div class="ed-caption"><h3>Couture AW25</h3><span>Womenswear</span></div></div>
+    <div class="ed-cell g-scale" data-char="I"><img class="ed-img" src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80&fit=crop" alt=""><div class="ed-overlay"></div><div class="ed-caption"><h3>Lady Dior</h3><span>Accessories</span></div></div>
+    <div class="ed-cell g-scale" data-char="O"><img class="ed-img" src="J'adore Parfum dior.jfif" alt=""><div class="ed-overlay"></div><div class="ed-caption"><h3>J'adore</h3><span>Fragrance</span></div></div>
+    <div class="ed-cell g-scale" data-char="R"><img class="ed-img" src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=600&q=80&fit=crop" alt=""><div class="ed-overlay"></div><div class="ed-caption"><h3>Saddle Bag</h3><span>Maroquinerie</span></div></div>
+    <div class="ed-cell g-scale" data-char="✦"><img class="ed-img" src="https://images.unsplash.com/photo-1523359346063-d879354c0ea5?w=600&q=80&fit=crop" alt=""><div class="ed-overlay"></div><div class="ed-caption"><h3>Ready to Wear</h3><span>Womenswear</span></div></div>
+  </div>
+</section>
+
+<div style="background:var(--white);padding:32px 0;display:flex;justify-content:center;align-items:center;">
+  <svg width="480" height="24" viewBox="0 0 480 24" fill="none" class="svg-line-draw" id="ornDivider">
+    <line x1="0" y1="12" x2="180" y2="12" stroke="#b8a06a" stroke-width=".8"/>
+    <path d="M190,12 L210,4 L220,12 L210,20 Z" fill="none" stroke="#b8a06a" stroke-width=".8"/>
+    <circle cx="240" cy="12" r="6" fill="none" stroke="#b8a06a" stroke-width="1"/>
+    <circle cx="240" cy="12" r="2" fill="#b8a06a"/>
+    <path d="M250,12 L260,4 L270,12 L260,20 Z" fill="none" stroke="#b8a06a" stroke-width=".8"/>
+    <line x1="280" y1="12" x2="480" y2="12" stroke="#b8a06a" stroke-width=".8"/>
+    <circle cx="0" cy="12" r="2.5" fill="#b8a06a"/>
+    <circle cx="480" cy="12" r="2.5" fill="#b8a06a"/>
+    <circle cx="186" cy="12" r="1.5" fill="#b8a06a"/>
+    <circle cx="294" cy="12" r="1.5" fill="#b8a06a"/>
+  </svg>
+</div>
+
+<section id="banner">
+  <div class="banner-img"></div>
+  <div class="banner-overlay"></div>
+  <svg class="banner-svg-ring" id="bannerRing" width="700" height="700" viewBox="0 0 700 700">
+    <circle cx="350" cy="350" r="320" stroke-width=".5"/><circle cx="350" cy="350" r="260" stroke-width=".3"/>
+    <circle cx="350" cy="350" r="200" stroke-width=".6"/><circle cx="350" cy="350" r="140" stroke-width=".3"/>
+    <g stroke="#b8a06a" stroke-width=".8" opacity=".6">
+      <line x1="350" y1="30" x2="350" y2="46"/><line x1="350" y1="654" x2="350" y2="670"/>
+      <line x1="30" y1="350" x2="46" y2="350"/><line x1="654" y1="350" x2="670" y2="350"/>
+    </g>
+  </svg>
+  <div class="banner-content">
+    <p class="banner-eyebrow g-up">Paris — Haute Couture — 1946</p>
+    <h2 class="banner-title g-up">Dreams <em>Woven</em><br>Into Reality</h2>
+    <p class="banner-sub g-up">The spirit of Christian Dior lives in every stitch</p>
+    <a href="#about" class="btn-outline-light g-up">Explore the Maison</a>
+  </div>
+</section>
+
+<section id="products">
+  <div class="products-head g-fade">
+    <div><span class="section-label">Exclusive Selections</span><h2 class="section-title on-dark">The <em>Boutique</em></h2></div>
+    <a href="#" class="section-link on-dark">View All Products →</a>
+  </div>
+  <div class="products-grid">
+    <div class="prod-card g-up" data-char="L"><img class="prod-img" src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80&fit=crop" alt="Lady Dior"><div class="prod-tag">New</div><div class="prod-info"><div class="prod-num">01 / 06</div><div class="prod-name">Lady Dior</div><div class="prod-price">€ 5,200</div></div></div>
+    <div class="prod-card g-up" data-char="S"><img class="prod-img" src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=600&q=80&fit=crop" alt="Saddle Bag"><div class="prod-info"><div class="prod-num">02 / 06</div><div class="prod-name">Saddle Bag</div><div class="prod-price">€ 3,800</div></div></div>
+    <div class="prod-card g-up" data-char="J"><img class="prod-img" src="J'adore Parfum dior.jfif" alt="J'adore"><div class="prod-info"><div class="prod-num">03 / 06</div><div class="prod-name">J'adore Parfum</div><div class="prod-price">€ 320</div></div></div>
+    <div class="prod-card g-up" data-char="B"><img class="prod-img" src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&q=80&fit=crop" alt="B27"><div class="prod-tag">Exclusive</div><div class="prod-info"><div class="prod-num">04 / 06</div><div class="prod-name">B27 Sneaker</div><div class="prod-price">€ 890</div></div></div>
+    <div class="prod-card g-up" data-char="W"><img class="prod-img" src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=600&q=80&fit=crop" alt="Watch"><div class="prod-info"><div class="prod-num">05 / 06</div><div class="prod-name">Grand Bal Watch</div><div class="prod-price">€ 12,500</div></div></div>
+    <div class="prod-card g-up" data-char="C"><img class="prod-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&fit=crop" alt="Bar Jacket"><div class="prod-tag">Couture</div><div class="prod-info"><div class="prod-num">06 / 06</div><div class="prod-name">Bar Jacket</div><div class="prod-price">€ 8,900</div></div></div>
+  </div>
+</section>
+
+<section id="features">
+
+    <!-- LEFT: stacked images, swapped via clip-path wipe -->
+    <div class="feat-img-stack">
+      <img class="feat-slide-img initial" id="fimg0"
+           src="sauvage dior.webp" alt="Haute Couture Heritage">
+      <img class="feat-slide-img" id="fimg1"
+           src="exceptional img.jpg" alt="Exceptional Materials">
+      <img class="feat-slide-img" id="fimg2"
+           src="timeless-elegance.jpg" alt="Timeless Elegance">
+      <img class="feat-slide-img" id="fimg3"
+           src="Bespoke Service.jfif" alt="Bespoke Service">
+      <img class="feat-slide-img" id="fimg4"
+           src="The-new-look.jfif" alt="The New Look">
+      <img class="feat-slide-img" id="fimg5"
+           src="Miss-dior-eau-de-parfum.avif" alt="Parfum de Grasse">
+      <img class="feat-slide-img" id="fimg6"
+           src="Maroquinerie.jpg" alt="Maroquinerie">
+      <img class="feat-slide-img" id="fimg7"
+           src="Joaillerie Fine.jfif" alt="Joaillerie Fine">
+
+      <div class="feat-img-caption">
+        <h3 id="featCapTitle">L'Atelier Dior</h3>
+        <span id="featCapSub">Paris · Avenue Montaigne</span>
+      </div>
+      <div class="feat-counter"><strong id="featCountCur">01</strong> / 08</div>
+      <div class="feat-progress" id="featDots"></div>
+    </div>
+
+    <!-- RIGHT: dark content panel -->
+    <div class="feat-content-panel">
+      <div class="feat-panel-head" id="featPanelHead">
+        <span class="feat-panel-label">Our Philosophy</span>
+        <h2 class="feat-panel-title">Savoir-Faire <em>Extraordinaire</em></h2>
+      </div>
+      <span class="feat-pillars-label">Eight Pillars</span>
+
+      <div class="feat-items-list">
+        <div class="feat-item" id="fi0">
+          <div class="feat-sweep" id="fs0"></div>
+          <div class="feat-wipe-outer" id="fw0">
+            <div class="feat-n">01</div>
+            <div class="feat-text">
+              <h4 id="fh0">Haute Couture Heritage</h4>
+              <p id="fp0">Every stitch a testament to 75 years of Parisian craftsmanship perfected on Avenue Montaigne.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feat-item" id="fi1">
+          <div class="feat-sweep" id="fs1"></div>
+          <div class="feat-wipe-outer" id="fw1">
+            <div class="feat-n">02</div>
+            <div class="feat-text">
+              <h4 id="fh1">Exceptional Materials</h4>
+              <p id="fp1">Finest silks from Lyon, supple leathers from Italy, precious stones curated from across the globe.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feat-item" id="fi2">
+          <div class="feat-sweep" id="fs2"></div>
+          <div class="feat-wipe-outer" id="fw2">
+            <div class="feat-n">03</div>
+            <div class="feat-text">
+              <h4 id="fh2">Timeless Elegance</h4>
+              <p id="fp2">The New Look endures. Each season we reimagine the silhouette, never forgetting Monsieur Dior's vision.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feat-item" id="fi3">
+          <div class="feat-sweep" id="fs3"></div>
+          <div class="feat-wipe-outer" id="fw3">
+            <div class="feat-n">04</div>
+            <div class="feat-text">
+              <h4 id="fh3">Exclusive Bespoke Service</h4>
+              <p id="fp3">Private clientele service from initial sketch to final fitting with absolute discretion.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feat-item" id="fi4">
+          <div class="feat-sweep" id="fs4"></div>
+          <div class="feat-wipe-outer" id="fw4">
+            <div class="feat-n">05</div>
+            <div class="feat-text">
+              <h4 id="fh4">The New Look Legacy</h4>
+              <p id="fp4">Since 1947, the iconic silhouette has defined modern femininity — a revolutionary vision born in Paris.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feat-item" id="fi5">
+          <div class="feat-sweep" id="fs5"></div>
+          <div class="feat-wipe-outer" id="fw5">
+            <div class="feat-n">06</div>
+            <div class="feat-text">
+              <h4 id="fh5">Art of Perfumery</h4>
+              <p id="fp5">From the flower fields of Grasse to the bottle — each Dior fragrance is an olfactory work of art.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feat-item" id="fi6">
+          <div class="feat-sweep" id="fs6"></div>
+          <div class="feat-wipe-outer" id="fw6">
+            <div class="feat-n">07</div>
+            <div class="feat-text">
+              <h4 id="fh6">Maroquinerie d'Exception</h4>
+              <p id="fp6">Every Lady Dior, every Saddle is hand-assembled in Paris by master leather artisans over dozens of hours.</p>
+            </div>
+          </div>
+        </div>
+        <div class="feat-item" id="fi7">
+          <div class="feat-sweep" id="fs7"></div>
+          <div class="feat-wipe-outer" id="fw7">
+            <div class="feat-n">08</div>
+            <div class="feat-text">
+              <h4 id="fh7">High Jewellery</h4>
+              <p id="fp7">Rare gems set by hand — each creation in the Dior Joaillerie collection takes hundreds of hours to complete.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feat-scroll-hint">
+        <span>Scroll to explore</span>
+        <div class="feat-hint-bar"><div class="feat-hint-fill" id="featFill"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="gallery-head g-fade">
+    <div><span class="section-label">Visual Stories</span><h2 class="section-title">The <em>Gallery</em></h2></div>
+    <a href="#" class="section-link">View All →</a>
+  </div> 
+  <div class="h-scroll-outer">
+    <div class="h-scroll-track">
+      <div class="gal-cell" data-char="D"><img class="gal-img" src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80&fit=crop" alt=""><div class="gal-overlay"></div><div class="gal-label">Autumn / Winter 2024</div></div>
+      <div class="gal-cell" data-char="I"><img class="gal-img" src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80&fit=crop" alt=""><div class="gal-overlay"></div><div class="gal-label">Accessories</div></div>
+      <div class="gal-cell" data-char="O"><img class="gal-img" src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=600&q=80&fit=crop" alt=""><div class="gal-overlay"></div><div class="gal-label">Jewellery</div></div>
+      <div class="gal-cell" data-char="R"><img class="gal-img" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80&fit=crop" alt=""><div class="gal-overlay"></div><div class="gal-label">Couture</div></div>
+      <div class="gal-cell" data-char="✦"><img class="gal-img" src="perfume.jfif" alt=""><div class="gal-overlay"></div><div class="gal-label">Fragrance</div></div>
+      <div class="gal-cell" data-char="◆"><img class="gal-img" src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&q=80&fit=crop" alt=""><div class="gal-overlay"></div><div class="gal-label">Runway 2024</div></div>
+      <div class="gal-cell" data-char="◆"><img class="gal-img" src="Bar Jacket dior.avif" alt=""><div class="gal-overlay"></div><div class="gal-label">Runway 2024</div></div>
+      <div class="gal-cell" data-char="★"><img class="gal-img" src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&q=80&fit=crop" alt=""><div class="gal-overlay"></div><div class="gal-label">Resort 2025</div></div>
+    </div>
+  </div>
+  <div class="scroll-hint">Drag to explore <span>→</span></div>
+</section>
+
+<div class="v-strip"><div style="width:100%;overflow:hidden;"><div class="v-marquee-row"></div></div></div>
+
+<section id="about">
+  <div class="section-head g-fade" id="aboutHead">
+    <svg class="about-svg-deco" id="aboutDeco" width="160" height="60" viewBox="0 0 160 60" fill="none">
+      <line x1="0" y1="30" x2="60" y2="30" stroke="#b8a06a" stroke-width=".8" opacity=".6"/>
+      <path d="M65,30 Q80,10 95,30 Q110,50 125,30" stroke="#b8a06a" stroke-width="1" fill="none"/>
+      <line x1="130" y1="30" x2="160" y2="30" stroke="#b8a06a" stroke-width=".8" opacity=".6"/>
+      <circle cx="80" cy="30" r="4" fill="none" stroke="#b8a06a" stroke-width="1"/>
+      <circle cx="80" cy="30" r="1.5" fill="#b8a06a"/>
+    </svg>
+  </div>
+  
+   <div class="about-grid">
+
+  <!-- IMAGE 1 -->
+  <div class="about-img-wrap g-left">
+    <img class="about-img-main" src="Img-1-footer.jpg" alt="Dior Couture">
+    <div class="about-img-hover-overlay"></div>
+    <div class="about-img-hover-text">
+      <span class="aih-label">Heritage &amp; Vision</span>
+      <h4>Where Dreams<br><em>Become Reality</em></h4>
+      <p>Since 1947, the Maison Dior has been the pinnacle of Parisian elegance — redefining beauty for every generation.</p>
+      <a href="#" class="aih-btn">Explore the Maison →</a>
+    </div>
+  </div>
+
+  <!-- IMAGE 2 -->
+  <div class="about-img-wrap g-right">
+    <img class="about-img-main" src="Dior-footer.jpeg" alt="Dior Collection">
+    <div class="about-img-hover-overlay"></div>
+    <div class="about-img-hover-text">
+      <span class="aih-label">Haute Couture</span>
+      <h4>Crafted with<br><em>Precision</em></h4>
+      <p>Each piece is a testament to the enduring art of Dior craftsmanship — born from the ateliers of Avenue Montaigne.</p>
+      <a href="#" class="aih-btn">View Collection →</a>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand"><span class="foot-logo">DIOR</span><p>30 Avenue Montaigne, Paris. The house of dreams where elegance is born and beauty endures across generations.</p></div>
+    <div class="footer-col"><h5>Collections</h5><ul><li><a href="#">Women</a></li><li><a href="#">Men</a></li><li><a href="#">Baby &amp; Kids</a></li><li><a href="#">Haute Couture</a></li></ul></div>
+    <div class="footer-col"><h5>Universe</h5><ul><li><a href="#">Fragrance</a></li><li><a href="#">Beauty</a></li><li><a href="#">Jewellery</a></li><li><a href="#">Watches</a></li></ul></div>
+    <div class="footer-col"><h5>Maison</h5><ul><li><a href="#">Heritage</a></li><li><a href="#">Ateliers</a></li><li><a href="#">Exhibitions</a></li><li><a href="#">Contact</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Christian Dior Couture — All Rights Reserved</span>
+    <span>Paris · Milan · New York · Tokyo</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
